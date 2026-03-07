@@ -8,6 +8,19 @@ Core infrastructure services include **Proxmox virtualization**, **Active Direct
 
 ---
 
+# Table of Contents
+
+- Architecture
+- Architecture Layers
+- Technology Stack
+- Infrastructure Servers
+- HomeExp Application
+- Remote Access Workflow
+- Project Goals
+- Roadmap
+
+---
+
 # Architecture
 
 Below is the high-level architecture of the WEP Global Tech Home Lab environment.
@@ -44,153 +57,3 @@ ServiceCore --> HomeExp
 Portal --> Proxmox
 Portal --> DC
 Portal --> HomeExp
-Architecture Layers
-
-Network Layer
-
-MikroTik RouterOS
-
-WireGuard VPN
-
-Firewall / NAT
-
-Infrastructure Layer
-
-Proxmox Virtualization
-
-Active Directory
-
-TrueNAS Storage
-
-Application Layer
-
-WEP Command Portal
-
-HomeExp Application
-
-nginx Web Services
-
-Technology Stack
-
-Technologies used in this environment include:
-
-MikroTik RouterOS
-
-WireGuard VPN
-
-Proxmox VE
-
-Linux Servers
-
-Active Directory
-
-TrueNAS Storage
-
-nginx
-
-Node.js
-
-Infrastructure Servers
-MikroTik Router
-IP: 192.168.88.1
-Role:
-• Firewall
-• VPN Server
-• Internet Gateway
-Portal Server
-IP: 192.168.88.231
-Role:
-• WEP Global Tech Command Portal
-• Infrastructure dashboard
-• Entry point for internal services
-Proxmox Hypervisor
-IP: 192.168.88.200
-Role:
-• Virtual machine host
-• Infrastructure virtualization
-Domain Controller
-IP: 192.168.88.230
-Role:
-• Active Directory
-• Internal DNS
-• Authentication services
-service-core-01
-IP: 192.168.88.155
-Role:
-• Application server
-• nginx reverse proxy
-• HomeExp custom application
-HomeExp Application
-
-HomeExp is a custom Node.js application designed to support internal infrastructure management.
-
-Location: /srv/HomeExp
-Port: 4000
-Runtime: Node.js
-
-Purpose:
-
-Internal application hosting
-
-Portal page generation
-
-Infrastructure management tools
-
-Remote Access Workflow
-Remote Laptop
-      │
-WireGuard VPN
-      │
-MikroTik Router
-      │
-LAN Network
-      │
-WEP Command Portal
-      │
-Infrastructure & Applications
-
-The command portal acts as a single pane of glass for managing the environment.
-
-Project Goals
-
-The goal of this lab is to build hands-on experience designing and operating enterprise-style infrastructure.
-
-Current objectives:
-
-Build layered infrastructure architecture
-
-Implement secure VPN remote access
-
-Manage virtualized services
-
-Develop internal applications
-
-Document system architecture
-
-Roadmap
-
-Future improvements planned for this environment.
-
-Networking
-
-VLAN segmentation
-
-Advanced firewall policies
-
-Network monitoring
-
-Infrastructure
-
-VM replication
-
-Automated backups
-
-Infrastructure monitoring
-
-Applications
-
-Expand HomeExp application
-
-Add health dashboards
-
-Centralized logging
