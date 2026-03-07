@@ -1,59 +1,89 @@
 # WEP Global Tech Home Lab
 
-This project documents my enterprise-style home lab designed to simulate real-world infrastructure environments. The lab focuses on networking, virtualization, identity management, and application hosting using technologies commonly found in production environments.
+This repository documents my enterprise-style home lab used to simulate real-world IT infrastructure environments.
 
-The environment is built around a layered architecture consisting of **network**, **infrastructure**, and **application tiers**. Secure remote access is provided through a **WireGuard VPN connected to a MikroTik firewall**, allowing centralized management through a custom-built command portal.
-
-Core infrastructure services include **Proxmox virtualization**, **Active Directory domain services**, and **TrueNAS storage**. Application services run on dedicated virtual machines and include custom Node.js tools designed to support infrastructure management and automation.
+The lab is designed to practice systems administration, networking, virtualization, and automation using technologies commonly found in production environments.
 
 ---
 
-# Table of Contents
+# Infrastructure Overview
 
-- Architecture
-- Architecture Layers
-- Technology Stack
-- Infrastructure Servers
-- HomeExp Application
-- Remote Access Workflow
-- Project Goals
-- Roadmap
+The environment is built using a layered architecture consisting of networking, virtualization infrastructure, and application services.
+
+Secure remote access is provided through a WireGuard VPN connected to a MikroTik firewall.
+
+Core infrastructure services include Proxmox virtualization, Active Directory domain services, and TrueNAS storage.
 
 ---
 
 # Architecture
 
-Below is the high-level architecture of the WEP Global Tech Home Lab environment.
-
 ```mermaid
 flowchart TD
 
-Internet[Internet]
+Internet --> MikroTikRouter
 
-Router[MikroTik Router<br>192.168.88.1<br>WireGuard VPN]
+MikroTikRouter --> LAN
 
-LAN[LAN Network<br>192.168.88.0/24]
+LAN --> ProxmoxHost
+LAN --> StorageServer
 
-Portal[Portal Server<br>192.168.88.231<br>WEP Command Portal]
+ProxmoxHost --> DomainController
+ProxmoxHost --> InfrastructureVMs
+ProxmoxHost --> ApplicationVMs
 
-Proxmox[Proxmox Hypervisor<br>192.168.88.200]
+StorageServer --> TrueNAS
+```
+# Technology Stack
+## Networking
 
-DC[Domain Controller<br>192.168.88.230]
+MikroTik RouterOS
 
-ServiceCore[service-core-01<br>192.168.88.155]
+WireGuard VPN
 
-HomeExp[HomeExp Application<br>Node.js<br>Port 4000]
+VLAN segmentation
 
-Internet --> Router
-Router --> LAN
+## Virtualization
 
-LAN --> Portal
-LAN --> Proxmox
-LAN --> DC
+Proxmox VE
 
-Proxmox --> ServiceCore
-ServiceCore --> HomeExp
+Linux Virtual Machines
 
-Portal --> Proxmox
-Portal --> DC
-Portal --> HomeExp
+## Identity
+
+Active Directory Domain Services
+
+Internal DNS
+
+## Storage
+
+TrueNAS
+
+Network File Shares
+
+## Applications
+
+Node.js infrastructure tools
+
+Internal management portal
+
+Monitoring utilities
+
+## Project Goals
+
+• Build hands-on enterprise infrastructure experience
+• Practice network design and segmentation
+• Develop infrastructure automation tools
+• Document real-world troubleshooting scenarios
+
+## Future Roadmap
+
+Centralized monitoring
+
+Infrastructure automation
+
+Containerized services
+
+Internal helpdesk system
+
+Advanced network segmentation
