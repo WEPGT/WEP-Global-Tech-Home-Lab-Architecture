@@ -1,5 +1,4 @@
 # WEP Global Tech Home Lab
-
 ![Proxmox](https://img.shields.io/badge/Proxmox-VE-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-Server-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Active Directory](https://img.shields.io/badge/Active%20Directory-Identity%20Management-003366?style=for-the-badge&logo=microsoft&logoColor=white)
@@ -7,6 +6,21 @@
 ![WireGuard](https://img.shields.io/badge/WireGuard-VPN-88171A?style=for-the-badge&logo=wireguard&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-Applications-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![TrueNAS](https://img.shields.io/badge/TrueNAS-Storage-0095D5?style=for-the-badge)
+
+---
+## Lab Status
+
+| Category | Status |
+|--------|--------|
+| Environment | Operational |
+| Virtualization Platform | Proxmox VE |
+| Domain Services | Active Directory (Samba) |
+| Network Infrastructure | MikroTik RouterOS |
+| Remote Access | WireGuard VPN |
+| Monitoring | Glances |
+| Development Focus | Infrastructure Engineering |
+
+---
 ## Navigation
 
 - [Architecture](#architecture)
