@@ -37,7 +37,7 @@ Core infrastructure services include Proxmox virtualization, Active Directory do
 
 ## Network Infrastructure
 
-![MikroTik Router](images/mikrotik-router-config.png)
+![MikroTik Router](images/mikrotik-wireguard.png)
 
 ---
 
