@@ -15,7 +15,35 @@ Secure remote access is provided through a WireGuard VPN connected to a MikroTik
 Core infrastructure services include Proxmox virtualization, Active Directory domain services, and TrueNAS storage.
 
 ---
+# Infrastructure Screenshots
 
+## Proxmox Virtualization Host
+
+![Proxmox Dashboard](images/proxmox-dashboard.png)
+
+---
+
+## Virtual Machine Inventory
+
+![VM Inventory](images/vm-inventory.png)
+
+---
+
+## Active Directory Domain
+
+![Active Directory](images/active-directory-domain.png)
+
+---
+
+## Network Infrastructure
+
+![MikroTik Router](images/mikrotik-router-config.png)
+
+---
+
+## Linux Server Monitoring
+
+![Glances Monitoring](images/glances-monitoring.png)
 # Architecture
 
 ```mermaid
