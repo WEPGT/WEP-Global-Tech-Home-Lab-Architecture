@@ -62,6 +62,19 @@ ProxmoxHost --> ApplicationVMs
 
 StorageServer --> TrueNAS
 ```
+
+---
+
+# Infrastructure Inventory
+
+| System | Role | Operating System | IP Address |
+|------|------|------|------|
+| Proxmox Host | Virtualization Hypervisor | Debian / Proxmox VE | 192.168.88.200 |
+| DC1 | Active Directory Domain Controller | Ubuntu Server + Samba AD | 192.168.88.230 |
+| service-core | Application / Services Server | Ubuntu Server | 192.168.88.xxx |
+| Portal | Infrastructure Management Portal | Node.js / Linux | 192.168.88.xxx |
+| Home Server | Storage / File Server | Windows 11 | 192.168.88.50 |
+| MikroTik Router | Firewall / Routing / VPN | RouterOS | 192.168.88.1 |
 # Technology Stack
 ## Networking
 
