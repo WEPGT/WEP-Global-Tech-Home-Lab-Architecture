@@ -164,6 +164,49 @@ The lab is structured using a three-tier infrastructure model:
 
 - Monitoring utilities
 
+  ---
+
+# Skills Demonstrated
+
+This home lab demonstrates hands-on experience with enterprise infrastructure technologies and operational practices.
+
+### Infrastructure
+
+- Virtualization using Proxmox
+- Multi-server infrastructure design
+- Virtual machine lifecycle management
+
+### Networking
+
+- Router configuration using MikroTik RouterOS
+- Firewall rule management
+- Secure remote access using WireGuard VPN
+- Private LAN architecture (192.168.88.0/24)
+
+### Identity & Access Management
+
+- Active Directory domain services
+- Domain user and group management
+- Centralized authentication
+
+### Linux Server Administration
+
+- Ubuntu Server deployment
+- Service management using systemd
+- System monitoring with Glances
+
+### Storage
+
+- Network storage management
+- File share services
+- Infrastructure data management
+
+### Infrastructure Monitoring
+
+- System performance monitoring
+- Resource usage tracking
+- Server health visibility
+
 ## Project Goals
 
 -  Build hands-on enterprise infrastructure experience
