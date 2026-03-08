@@ -37,13 +37,13 @@ Core infrastructure services include Proxmox virtualization, Active Directory do
 
 ## Network Infrastructure
 
-![MikroTik Router](images/mikrotik-router-config.png)
+![MikroTik Router](images/mikrotik-wireguard.png)
 
 ---
 
 ## Linux Server Monitoring
 
-![Glances Monitoring](images/glances-monitoring.png)
+![Glances Monitoring](images/linux-server-monitoring.png)
 # Architecture
 
 ```mermaid
