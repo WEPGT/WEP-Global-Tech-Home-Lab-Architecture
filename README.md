@@ -1,5 +1,14 @@
 # WEP Global Tech Home Lab
 
+## Navigation
+
+- [Architecture](#architecture)
+- [Infrastructure Inventory](#infrastructure-inventory)
+- [Infrastructure Screenshots](#infrastructure-screenshots)
+- [Technology Stack](#technology-stack)
+- [Project Goals](#project-goals)
+- [Future Roadmap](#future-roadmap)
+
 This repository documents my enterprise-style home lab used to simulate real-world IT infrastructure environments.
 
 The lab is designed to practice systems administration, networking, virtualization, and automation using technologies commonly found in production environments.
