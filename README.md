@@ -1,5 +1,12 @@
 # WEP Global Tech Home Lab
 
+![Proxmox](https://img.shields.io/badge/Proxmox-VE-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-Server-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Active Directory](https://img.shields.io/badge/Active%20Directory-Identity%20Management-003366?style=for-the-badge&logo=microsoft&logoColor=white)
+![MikroTik](https://img.shields.io/badge/MikroTik-RouterOS-293239?style=for-the-badge)
+![WireGuard](https://img.shields.io/badge/WireGuard-VPN-88171A?style=for-the-badge&logo=wireguard&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Applications-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![TrueNAS](https://img.shields.io/badge/TrueNAS-Storage-0095D5?style=for-the-badge)
 ## Navigation
 
 - [Architecture](#architecture)
