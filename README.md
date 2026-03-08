@@ -207,6 +207,43 @@ This home lab demonstrates hands-on experience with enterprise infrastructure te
 - Resource usage tracking
 - Server health visibility
 
+  ---
+
+# Lab Design Principles
+
+The WEP Global Tech Home Lab is designed using several core infrastructure principles commonly used in enterprise environments.
+
+### Security
+
+- Network boundary protection using MikroTik firewall rules
+- Secure remote access through WireGuard VPN
+- Controlled access to internal services
+
+### Segmentation
+
+- Separation between edge networking, infrastructure systems, and application services
+- Logical organization of virtual machines within the Proxmox environment
+
+### Centralized Identity
+
+- Active Directory provides centralized authentication and directory services
+- Domain-based management of users and systems
+
+### Virtualization
+
+- Proxmox hypervisor hosts all infrastructure services
+- Virtual machines allow isolation and simplified lifecycle management
+
+### Observability
+
+- System monitoring using Glances
+- Visibility into CPU, memory, disk, and network activity
+
+### Scalability
+
+- The environment is structured to allow easy addition of new virtual machines and services
+- Modular architecture allows expansion without redesigning the core infrastructure
+
 ## Project Goals
 
 -  Build hands-on enterprise infrastructure experience
