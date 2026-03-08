@@ -43,7 +43,7 @@ Core infrastructure services include Proxmox virtualization, Active Directory do
 
 ## Linux Server Monitoring
 
-![Glances Monitoring](images/glances-monitoring.png)
+![Glances Monitoring](images/linux-server-monitoring.png)
 # Architecture
 
 ```mermaid
