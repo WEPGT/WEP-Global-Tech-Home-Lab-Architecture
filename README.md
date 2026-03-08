@@ -78,53 +78,53 @@ StorageServer --> TrueNAS
 # Technology Stack
 ## Networking
 
-MikroTik RouterOS
+- MikroTik RouterOS
 
-WireGuard VPN
+- WireGuard VPN
 
-VLAN segmentation
+- VLAN segmentation
 
 ## Virtualization
 
-Proxmox VE
+- Proxmox VE
 
-Linux Virtual Machines
+- Linux Virtual Machines
 
 ## Identity
 
-Active Directory Domain Services
+- Active Directory Domain Services
 
-Internal DNS
+- Internal DNS
 
 ## Storage
 
-TrueNAS
+- TrueNAS
 
-Network File Shares
+- Network File Shares
 
 ## Applications
 
-Node.js infrastructure tools
+- Node.js infrastructure tools
 
-Internal management portal
+- Internal management portal
 
-Monitoring utilities
+- Monitoring utilities
 
 ## Project Goals
 
-• Build hands-on enterprise infrastructure experience
-• Practice network design and segmentation
-• Develop infrastructure automation tools
-• Document real-world troubleshooting scenarios
+-  Build hands-on enterprise infrastructure experience
+-  Practice network design and segmentation
+-  Develop infrastructure automation tools
+-  Document real-world troubleshooting scenarios
 
 ## Future Roadmap
 
-Centralized monitoring
+- Centralized monitoring
 
-Infrastructure automation
+- Infrastructure automation
 
-Containerized services
+- Containerized services
 
-Internal helpdesk system
+- Internal helpdesk system
 
-Advanced network segmentation
+- Advanced network segmentation
