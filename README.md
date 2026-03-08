@@ -65,6 +65,44 @@ StorageServer --> TrueNAS
 
 ---
 
+## Architecture Overview
+```mermaid
+flowchart TB
+
+%% Edge Layer
+subgraph Edge_Network
+    Internet[Internet]
+    Router[MikroTik Router<br>192.168.88.1<br>Firewall / WireGuard VPN]
+end
+
+%% Infrastructure Layer
+subgraph Infrastructure
+    Proxmox[Proxmox Hypervisor<br>192.168.88.200]
+end
+
+%% Services Layer
+subgraph Services
+    DC1[DC1<br>Active Directory / DNS<br>192.168.88.230]
+    ServiceCore[Service-Core<br>Infrastructure Services]
+    Portal[Portal VM<br>Node.js Management Portal]
+    Storage[Home Server<br>Storage / File Shares<br>192.168.88.50]
+end
+
+Internet --> Router
+Router --> Proxmox
+
+Proxmox --> DC1
+Proxmox --> ServiceCore
+Proxmox --> Portal
+Proxmox --> Storage
+```
+The lab is structured using a three-tier infrastructure model:
+
+- **Edge Layer** – MikroTik router providing firewall protection and WireGuard VPN access.
+- **Infrastructure Layer** – Proxmox hypervisor hosting all virtual machines.
+- **Services Layer** – Domain services, application services, monitoring tools, and storage.
+
+
 # Infrastructure Inventory
 
 | System | Role | Operating System | IP Address |
